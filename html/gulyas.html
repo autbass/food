@@ -26,12 +26,15 @@
             Mehl dazu, Wasser hinzufügen bis Fleisch leicht bedeckt ist.<br>
             Schmoren bis Fleisch weich ist.<br>
         </p>
-        <picture alt="Gulyás">
-            <source srcset="/images/gulyas.jpg 1x, small-highres.jpg 2x">
-            <source media="(min-width: 18em)" srcset="/images/gulyas_500px.jpg 1x, med-highres.jpg 2x">
-            <source media="(min-width: 45em)" srcset="/images/gulyas_1024px.jpg 1x, large-highres.jpg 2x">
-            <img src="/images/gulyas.jpg" alt="Description of image subject.">
-          </picture>
-
+   
+          <picture alt="responsive image">
+            <source src="/images/gulyas_1024px.jpg" media="(min-width:1000px),
+            (min-resolution: 136dpi) and (min-width:800px)">
+            <source src="/images/gulyas_500px.jpg" media="(min-width:500px),
+            (min-resolution: 136dpi) and (min-width:300px)">
+            <source src="/images/gulyas.jpg">
+         <!-- fallback -->
+         <img src="/images/gulyas.jpg" alt="responsive image">
+       </picture>
     </body>
 </html>
