@@ -36,5 +36,15 @@
          <!-- fallback -->
          <!--<img src="/images/gulyas.jpg" alt="responsive image">-->
        </picture>
+
+       <picture alt="Description of image subject.">
+        <source srcset="/images/small.jpg 1x, small-highres.jpg 2x">
+        <source media="(min-width: 18em)" srcset="med.jpg 1x, med-highres.jpg 2x">
+        <source media="(min-width: 45em)" srcset="large.jpg 1x, large-highres.jpg 2x">
+        <img src="small.jpg" alt="Description of image subject.">
+      </picture>
+
+
+
     </body>
 </html>
